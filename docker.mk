@@ -14,4 +14,5 @@ docker-tag: ## Tag the docker image using the tag script.
 
 .PHONY: docker-publish
 docker-publish: docker-tag ## Publish the image and tags to a repository.
-docker push $(DOCKER_REPO)/$(IMAGE_NAME)
+	docker push $(DOCKER_REPO)/$(IMAGE_NAME)
+

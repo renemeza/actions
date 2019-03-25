@@ -1,5 +1,5 @@
 export ROOT_DIR=$(CURDIR)
-export DOCKER_REPO=getndazn
+export DOCKER_REPO=renemeza
 
 MODULES=$(dir $(wildcard */Makefile))
 
@@ -23,3 +23,4 @@ test: ## Call the 'test' target on all sub-modules
 dev-all: lint build test
 
 include help.mk
+

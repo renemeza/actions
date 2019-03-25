@@ -7,5 +7,5 @@ shell-lint:
 
 .PHONY: shell-test
 shell-test:
-bats $(BATS_TESTS)
+	bats $(BATS_TESTS)
 

@@ -1,6 +1,7 @@
 FROM alpine
 
 LABEL "name"="filter-branch-pattern"
+LABEL "maintainer"="Rene Meza <developers+github@unacast.com>"
 LABEL "version"="1.0.0"
 
 LABEL "com.github.actions.name"="Filter branch using pattern"
@@ -13,4 +14,6 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
+
+CMD [""]
 

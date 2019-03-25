@@ -1,6 +1,7 @@
 FROM alpine
 
 LABEL "name"="set-env-from-branch"
+LABEL "maintainer"="Rene Meza <developers+github@unacast.com>"
 LABEL "version"="1.0.0"
 
 LABEL "com.github.actions.name"="Set Env From Branch"
@@ -13,4 +14,6 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
+
+CMD [""]
 
