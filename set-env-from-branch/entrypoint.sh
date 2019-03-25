@@ -16,5 +16,5 @@ fi
 touch "$HOME"/current_env.sh
 
 echo "#\!/bin/sh
-export CONFIG_ENV=${ENV}" > "$HOME"/current_env.sh
+export ENV=${ENV}" > "$HOME"/current_env.sh
 
